@@ -1,11 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title>Polymer Playground</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='javascripts/lib/bootstrap/dist/css/bootstrap.min.css'/>
+    <link rel='stylesheet' href='javascripts/lib/bootstrap/dist/css/bootstrap-theme.min.css'/>
+    <script src="javascripts/lib/jquery/dist/jquery.min.js"></script>
+    <script src="javascripts/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="javascripts/lib/webcomponentsjs/webcomponents-lite.min.js"></script>
+    <link rel="import" href="javascripts/lib/polymer/polymer.html"/>
+    <link rel="import" href="webcomponents/hello-world.html"/>
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <h1>My polymer playground</h1>
+    <div class="row">
+    	<div class="col-md-6">
+    		<div class="row">
+    			<div class="col-md-12">
+    				<h3>Hello world code</h3>
+    			</div>
+    		</div>
+    		<div class="row">
+    			<div class="col-md-12">
+    				<div class="well well-lg"><%= helloWorld %></div>
+    			</div>
+    		</div>
+    	</div>
+    	<div class="col-md-6">
+    		<div class="row">
+    			<div class="col-md-12">
+    				<h3>Result Hello world</h3>
+    			</div>
+    			<div class="col-md-12">
+    				<hello-world name="Adrian"></hello-world>	
+    			</div>
+    		</div>
+    	</div>
+    </div>
   </body>
 </html>

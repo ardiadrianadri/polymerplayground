@@ -1,0 +1,23 @@
+{
+  "name": "polymerPlayground",
+  "description": "My playground to learn polymer",
+  "main": "index.ejs",
+  "authors": [
+    "ardiadrianadri <ardiadrianadri@gmail.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/javascript/lib/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "polymer": "^1.3.1"
+  }
+}
