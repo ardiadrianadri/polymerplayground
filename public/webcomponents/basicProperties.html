@@ -1,0 +1,35 @@
+<dom-module id="prop-elemt">
+	<template>
+		<h1>[[name]]</h1>
+		<h2>[[job]]</h2>
+		<h3>[[email]]</h3>
+	</template>
+	<script type="text/javascript">
+		Polymer({
+			is:'prop-elemt',
+			properties:{
+				name: String,
+				job: {
+					type: String,
+					reflectedToAttribute: true,
+					readOnly: true,
+					computed: 'getJobFromName(name)'
+				},
+				email: {
+					type: String,
+					value: "aferrere@everis.com"
+				}
+			},
+			getJobFromName: function (name){
+				var result = ""
+				if(name === "Adrian Ferreres"){
+					result = "The best JS Architect ever"
+				} else {
+					result = "Someone that does something"
+				}
+
+				return result;
+			}
+		})
+	</script>
+</dom-module>

@@ -1,0 +1,31 @@
+<dom-module id="ext-button">
+	<template>
+		<content></content>
+	</template>
+	<script type="text/javascript">
+		var content = 0;
+
+		function changeButton (button){
+			var btnTypes = [
+					'btn btn-primary',
+					'btn btn-success', 
+					'btn btn-info',
+					'btn btn-warning',
+					'btn btn-danger',
+					'btn btn-link'];
+				var btnChoose = counter % btnTypes.length;
+				button.setAttribute('class', btnTypes[btnChoose]);
+				counter ++;
+		}
+
+		Polymer({
+			is:"ext-button",
+			extends:'button',
+			created: function (){
+				this.addEventListener('click', function(){
+					changeButton(this);
+				});
+			}
+		})
+	</script>
+</dom-module>

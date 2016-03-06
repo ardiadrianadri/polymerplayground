@@ -13,6 +13,8 @@
     <link rel="import" href="webcomponents/lifeCycle.html" />
     <link rel="import" href="webcomponents/bussinesCard.html" />
     <link rel="import" href="webcomponents/myCard.html" />
+    <link rel="import" href="webcomponents/extendedButton.html" />
+    <link rel="import" href="webcomponents/basicProperties.html"/>
   </head>
   <body>
     <h1>My polymer playground</h1>
@@ -118,5 +120,61 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Extend native html tags code</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="well well-lg"><pre><code><%= myButton %></code></pre></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Extend native html tags example</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <button type="button" class="btn btn-default">No extended button</button>
+                </div>
+                <div class="col-md-6">
+                    <button type="button" class="btn btn-default" is="ext-button">Extended button</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Basic properties code</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="well well-lg"><pre><code><%= basicProps %></code></pre></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Basic properties example</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <prop-elemt name="Adrian Ferreres" email="ardiadrianadri@gmail.com"></prop-elemt>
+                </div>
+            </div>
+        </div>
+    </div>
   </body>
 </html>

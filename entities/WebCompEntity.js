@@ -14,5 +14,11 @@ exports.wcc={
 	},{
 		id:'myCard',
 		file:'myCard.html'
+	},{
+		id:'myButton',
+		file:'extendedButton.html'
+	},{
+		id: 'basicProps',
+		file:'basicProperties.html'
 	}]
 }
