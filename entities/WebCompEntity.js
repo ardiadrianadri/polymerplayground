@@ -11,5 +11,8 @@ exports.wcc={
 	},{
 		id:'bussinesCard',
 		file:'bussinesCard.html'
+	},{
+		id:'myCard',
+		file:'myCard.html'
 	}]
 }

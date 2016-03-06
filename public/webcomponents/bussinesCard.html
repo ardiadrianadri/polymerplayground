@@ -10,6 +10,12 @@
     		<div class="logo"></div>
   		</div>
   		<style type="text/css">
+  		    :host{
+  		    	--card-background-color: #222627;
+  		    	--line1-color: #fff;
+  		    	--line2-color: #fff;
+  		    	--contact-color: #fff;
+  		    }
   			@font-face {
   				font-family: 'The Girl Next Door';
   				font-style: normal;
@@ -20,12 +26,12 @@
 			:host {
 				width:450px;
 				height:250px;
-				background:transparent url(http://colourlovers.com.s3.amazonaws.com/images/patterns/3925/3925858.png?1381698366)repeat bottom right;
+				background-color: 
 				padding:15px;
 				font-family: 'Ubuntu', sans-serif;
 			}
 			.container {
-				background:#222627; 
+				background: var(--custom-card-background-color, --card-background-color); 
 				width:445px;
 				height:245px;
 				border:2px dotted #1ba9cc;
@@ -34,18 +40,18 @@
 			.line1 {
 				font-family: 'The Girl Next Door', cursive;
 				font-size:29px;
-				color:#fff;
+				color:var(--custom-line1-color, --line1-color);
 				margin:8px;
 			}
 			.line2 {
 				font-family: 'Ubuntu', sans-serif;
 				font-size:15px;
-				color:#fff;
+				color:var(--custom-line2-color, --line2-color);
 				margin:-8px 0 0 9px;
 			}
 			.contact {
 				font-family: 'Ubuntu', sans-serif;
-				color:#fff;
+				color:var(--custom-contact-color, --contact-color);
 				width:250px;
 				height:65px;
 				margin:75px 0 0 9px;

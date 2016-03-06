@@ -12,6 +12,7 @@
     <link rel="import" href="webcomponents/hello-world.html"/>
     <link rel="import" href="webcomponents/lifeCycle.html" />
     <link rel="import" href="webcomponents/bussinesCard.html" />
+    <link rel="import" href="webcomponents/myCard.html" />
   </head>
   <body>
     <h1>My polymer playground</h1>
@@ -74,7 +75,14 @@
             </div>
             <div class="row">
                 <div class="col-md-12">
+                    <h4>Bussines card code</h4>
                     <div class="well well-lg"><pre><code><%= bussinesCard %></code></pre></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h4>My card code</h4>
+                    <div class="well well-lg"><pre><code><%= myCard %></code></pre></div>
                 </div>
             </div>
         </div>
@@ -101,6 +109,12 @@
                         </div>
                         <div class="logo"></div>
                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>My custom card</h4>
+                    <my-card my-name="Adrian Ferreres" my-job="JS Architect" my-email="ardiadrianadri@gmail.com" my-website="https://github.com/ardiadrianadri"></my-card>
                 </div>
             </div>
         </div>
