@@ -1,0 +1,49 @@
+<dom-module id="life-cycle">
+	<template>
+		<button type="button" id="btn" class="btn btn-default">Watch Polymer in action</button>
+	</template>
+	<script type="text/javascript">
+		var counter = 0;
+		Polymer({
+			is:'life-cycle',
+			created: function () {
+				this.log('created');
+				this.addEventListener('click',function(){
+					this.remove();
+				});
+			},
+			ready: function () {
+				this.log('ready');
+				this.ticker = setInterval(this.updateAttribute.bind(this),500);
+			},
+			attached: function () {
+				this.log('attached');
+			},
+			detached: function () {
+				this.log('detached');
+				clearInterval(this.ticker);
+			},
+			attributeChanged: function (name, oldValue, newValue){
+				console.log('Attribute %s with the value %s has changed to %s', name, oldValue, newValue);
+			},
+			updateAttribute: function (){
+				var btnTypes = [
+					'btn btn-primary',
+					'btn btn-success', 
+					'btn btn-info',
+					'btn btn-warning',
+					'btn btn-danger',
+					'btn btn-link'];
+				var btnChoose = counter % btnTypes.length;
+				this.$ && this.$.btn.setAttribute('class', btnTypes[btnChoose]);
+				counter ++;
+
+			},
+			log: function (cycle) {
+				console.log('***** ' + cycle);
+				this.$ && console.dir(this.$.btn);
+				this.updateAttribute();
+			}
+		})
+	</script>
+</dom-module>

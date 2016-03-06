@@ -10,6 +10,8 @@
     <script src="javascripts/lib/webcomponentsjs/webcomponents-lite.min.js"></script>
     <link rel="import" href="javascripts/lib/polymer/polymer.html"/>
     <link rel="import" href="webcomponents/hello-world.html"/>
+    <link rel="import" href="webcomponents/lifeCycle.html" />
+    <link rel="import" href="webcomponents/bussinesCard.html" />
   </head>
   <body>
     <h1>My polymer playground</h1>
@@ -37,5 +39,70 @@
     		</div>
     	</div>
     </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Life cycle example code</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="well well-lg"><pre><code><%= lifeCycle %></code></pre></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Result of lify cycle example</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <life-cycle></life-cycle>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>CSS in polimer code</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="well well-lg"><pre><code><%= bussinesCard %></code></pre></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>CSS in polimer example</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Card with style</h4>
+                    <bussines-card name="Adrian Ferreres" job="JS Architect" email="ardiadrianadri@gmail.com" website="https://github.com/ardiadrianadri"></bussines-card>
+                </div>
+                <div class="col-md-6">
+                    <h4>Card without style</h4>
+                    <div class="container">
+                        <p class="line1">Add Your Name</p>
+                        <p class="line2">Enter your job title</p> 
+                        <div class="contact">
+                            yourname@example.com<br/>
+                            www.example.com<br/>
+                            ###-###-####
+                        </div>
+                        <div class="logo"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
   </body>
 </html>

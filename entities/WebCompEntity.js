@@ -5,5 +5,11 @@ exports.wcc={
 	list: [{
 		id:'helloWorld',
 		file:'hello-world.html'
+	},{
+		id:'lifeCycle',
+		file:'lifeCycle.html'
+	},{
+		id:'bussinesCard',
+		file:'bussinesCard.html'
 	}]
 }
