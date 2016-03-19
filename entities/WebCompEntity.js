@@ -20,5 +20,11 @@ exports.wcc={
 	},{
 		id: 'basicProps',
 		file:'basicProperties.html'
+	},{
+		id:'twoWaysDataBindingParent',
+		file:'twoWaysDataBindingParent.html'
+	},{
+		id:'twoWaysDataBindingChild',
+		file:'twoWaysDataBindingChild.html'
 	}]
 }

@@ -15,6 +15,7 @@
     <link rel="import" href="webcomponents/myCard.html" />
     <link rel="import" href="webcomponents/extendedButton.html" />
     <link rel="import" href="webcomponents/basicProperties.html"/>
+    <link rel="import" href="webcomponents/twoWaysDataBindingParent.html" />
   </head>
   <body>
     <h1>My polymer playground</h1>
@@ -172,6 +173,52 @@
             <div class="row">
                 <div class="col-md-12">
                     <prop-elemt name="Adrian Ferreres" email="ardiadrianadri@gmail.com"></prop-elemt>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div clas="row">
+        <div class="col-md-12">
+            <h3>Data Binding</h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h4>Data Binding Parent to Child</h4>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-12">
+                    <h5>Parent code</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="well well-lg"><pre><code><%= twoWaysDataBindingParent%></code></pre></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <h5>Child code</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="well well-lg"><pre><code><%= twoWaysDataBindingChild%></code></pre></div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-12">
+                    <h5>Data Binding Parent to Child example</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                     <parent-element></parent-element>
                 </div>
             </div>
         </div>
