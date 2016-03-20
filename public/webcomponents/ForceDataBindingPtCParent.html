@@ -1,0 +1,13 @@
+<link rel="import" href="ForceDataBindingPtCChild.html" />
+<dom-module id="parent-element-three">
+	<template>
+		<p>Parent</p>
+		<input type="text" class="form-control" value="{{parentData::input}}"/>
+		<child-element-three data="[[parentData]]"></child-element>
+	</template>
+	<script>
+		Polymer({
+			is: 'parent-element-three'
+		});
+	</script>
+</dom-module>

@@ -1,0 +1,13 @@
+<link rel="import" href="DataBindingChildToParentChild.html" />
+<dom-module id="parent-element-four">
+	<template>
+		<p>Parent</p>
+		<input type="text" class="form-control" value="{{parentData::input}}"/>
+		<child-element-four data="{{parentData}}"></child-element>
+	</template>
+	<script>
+		Polymer({
+			is: 'parent-element-four'
+		});
+	</script>
+</dom-module>

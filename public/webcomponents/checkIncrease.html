@@ -1,0 +1,21 @@
+<link rel="import" href="CustomEvent.html" />
+<dom-module id="check-increase">
+	<template>
+		<h3>The range is increasing: {{increasing}}</h3>
+		<my-range id="inputRange" value="10"></my-range>
+	</template>
+	<script>
+		Polymer({
+			is:'check-increase',
+			properties:{
+				'increasing':Boolean
+			},
+			listeners:{
+				'inputRange.valueChanged': 'changedHandler'
+			},
+			changedHandler: function (event){
+				this.increasing = event.detail.increased;
+			}
+		});
+	</script>
+</dom-module>

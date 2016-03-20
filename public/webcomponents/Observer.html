@@ -1,0 +1,23 @@
+<dom-module id="observer-element">
+	<template>
+		<h1 id="title">Hello World</h1>
+		<label for="helloWorld">Change the collor of "Hello World"</label>
+		<input type="text" class="form-control" value="{{color::input}}" id="helloWorld" />
+	</template>
+	<script>
+		Polymer({
+			is: "observer-element",
+			properties: {
+				color:{
+					type: String,
+					observer: 'colorChanged',
+					value: 'red'
+				}
+			},
+			colorChanged: function( newVal, oldVal){
+				console.log("New value: "+ newVal + ". Old value: "+oldVal);
+				this.$.title.style.color = newVal;
+			}
+		});
+	</script>
+</dom-module>

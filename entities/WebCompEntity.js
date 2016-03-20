@@ -21,10 +21,40 @@ exports.wcc={
 		id: 'basicProps',
 		file:'basicProperties.html'
 	},{
-		id:'twoWaysDataBindingParent',
+		id:'DataBindingParentToChildParent',
+		file:'DataBindingParentToChildParent.html'
+	},{
+		id:'DataBindingParentToChildChild',
+		file:'DataBindingParentToChildChild.html'
+	},{
+		id: 'twoWaysDataBindingParent',
 		file:'twoWaysDataBindingParent.html'
 	},{
 		id:'twoWaysDataBindingChild',
 		file:'twoWaysDataBindingChild.html'
+	},{
+		id:'ForceDataBindingPtCParent',
+		file:'ForceDataBindingPtCParent.html'
+	},{
+		id:'ForceDataBindingPtCChild',
+		file:'ForceDataBindingPtCChild.html'
+	},{
+		id:'DataBindingChildToParentParent',
+		file:'DataBindingChildToParentParent.html'
+	},{
+		id:'DataBindingChildToParentChild',
+		file:'DataBindingChildToParentChild.html'
+	},{
+		id:'observer',
+		file:'Observer.html'
+	},{
+		id:'eventsListeners',
+		file:'eventListeners.html'
+	},{
+		id:'CustomEvent',
+		file:'CustomEvent.html'
+	},{
+		id:'checkIncrease',
+		file:'checkIncrease.html'
 	}]
 }

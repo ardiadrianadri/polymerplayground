@@ -1,4 +1,4 @@
-<dom-module id="child-element-two">
+<dom-module id="child-element-four">
 	<template>
 		<p>Child</p>
 		<input type="text" class="form-control" value="{{data::input}}" />
@@ -7,17 +7,14 @@
 	</template>
 	<script>
 		Polymer({
-			is:"child-element-two",
+			is:"child-element-four",
 			properties: {
 				data: {
 					type: String,
-					notify: true
+					notify: true,
+					readOnly: true,
+					value:'Child'
 				}
-			},
-			ready: function (){
-				this.addEventListener('data-changed', function(event){
-					console.log(event.detail.value);
-				})
 			}
 		})
 	</script>

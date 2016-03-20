@@ -1,0 +1,34 @@
+<dom-module id="listener-element">
+	<template>
+		<div class="row">
+			<div class="col-md-12">
+				<span>Counter of clicks: {{numClicks}}</span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<button on-click="clickHandler" class="btn btn-primary">Annotated event</button>
+			</div>
+			<div class="col-md-6">
+				<button id="btnId" class="btn btn-primary">Listener event</button>
+			</div>
+		</div>
+	</template>
+	<script>
+		Polymer({
+			is:'listener-element',
+			properties:{
+				numClicks:{
+					type: Number,
+					value: 0
+				}
+			},
+			listeners: {
+				'btnId.click': 'clickHandler'
+			},
+			clickHandler: function() {
+				this.numClicks = this.numClicks + 1;
+			}
+		});
+	</script>
+</dom-module>
