@@ -56,5 +56,8 @@ exports.wcc={
 	},{
 		id:'checkIncrease',
 		file:'checkIncrease.html'
+	},{
+		id:'listComponent',
+		file:'listComponent.html'
 	}]
 }

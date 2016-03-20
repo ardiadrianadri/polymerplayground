@@ -1,0 +1,24 @@
+<dom-module id="list-element">
+	<template>
+		<ul>
+			<template is="dom-repeat" items="{{foods}}">
+				<li><button type="button" class="btn btn-default btn-xs" on-click="add">+</button> {{item.qty}} - {{item.name}} (#{{index}})</li>
+			</template>
+		</ul>
+	</template>
+	<script>
+		Polymer({
+			is:'list-element',
+			ready: function (){
+				this.foods = [
+					{name:'Pizza', qty:0},
+					{name:'Bureger',qty:0},
+					{name:'Taco', qty:0}
+				];
+			},
+			add: function (event){
+				event.model.set('item.qty',event.model.item.qty + 1);
+			}
+		});
+	</script>
+</dom-module>
