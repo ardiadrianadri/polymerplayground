@@ -2,3 +2,4 @@ node_modules/*
 npm-debug.log
 nohup.out
 public/javascripts/lib/*
+.idea/*

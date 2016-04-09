@@ -1,0 +1,40 @@
+<link rel="import" href="../javascripts/lib/iron-ajax/iron-ajax.html" />
+<link rel="import" href="../javascripts/lib/iron-pages/iron-pages.html" />
+
+<dom-module id="code-tag">
+    <template>
+        <iron-ajax
+            auto
+            url="{{urlsource}}"
+            handle-as="text"
+            on-error="handlerError"
+            on-response="handlerResponse"
+        ></iron-ajax>
+        <iron-pages selected="{{selected}}">
+            <div>
+                <pre><code>{{code}}</code></pre>
+            </div>
+            <div>
+                <h3>{{err}}</h3>
+            </div>
+        </iron-pages>
+    </template>
+    <script>
+        Polymer({
+            is:'code-tag',
+            handlerError: function (error){
+                this.selected = 1;
+                this.err = error;
+            },
+            handlerResponse: function (data){
+                this.code = data.detail.response;
+            },
+            properties:{
+              urlsource: String
+            },
+            ready: function (){
+                this.selected = 0;
+            }
+        });
+    </script>
+</dom-module>

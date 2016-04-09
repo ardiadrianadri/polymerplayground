@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>Polymer Playground</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
     <link rel='stylesheet' href='javascripts/lib/bootstrap/dist/css/bootstrap.min.css'/>
     <link rel='stylesheet' href='javascripts/lib/bootstrap/dist/css/bootstrap-theme.min.css'/>
     <script src="javascripts/lib/jquery/dist/jquery.min.js"></script>
@@ -10,457 +10,487 @@
     <script src="javascripts/lib/webcomponentsjs/webcomponents-lite.min.js"></script>
     <link rel="import" href="javascripts/lib/polymer/polymer.html"/>
     <link rel="import" href="webcomponents/hello-world.html"/>
-    <link rel="import" href="webcomponents/lifeCycle.html" />
-    <link rel="import" href="webcomponents/bussinesCard.html" />
-    <link rel="import" href="webcomponents/myCard.html" />
-    <link rel="import" href="webcomponents/extendedButton.html" />
+    <link rel="import" href="webcomponents/lifeCycle.html"/>
+    <link rel="import" href="webcomponents/bussinesCard.html"/>
+    <link rel="import" href="webcomponents/myCard.html"/>
+    <link rel="import" href="webcomponents/extendedButton.html"/>
     <link rel="import" href="webcomponents/basicProperties.html"/>
-    <link rel="import" href="webcomponents/DataBindingParentToChildParent.html" />
-    <link rel="import" href="webcomponents/twoWaysDataBindingParent.html" />
+    <link rel="import" href="webcomponents/DataBindingParentToChildParent.html"/>
+    <link rel="import" href="webcomponents/twoWaysDataBindingParent.html"/>
     <link rel="import" href="webcomponents/ForceDataBindingPtCParent.html"/>
-    <link rel="import" href="webcomponents/DataBindingChildToParentParent.html" />
-    <link rel="import" href="webcomponents/Observer.html" />
-    <link rel="import" href="webcomponents/eventListeners.html" />
-    <link rel="import" href="webcomponents/checkIncrease.html" />
-    <link rel="import" href="webcomponents/listComponent.html" />
-  </head>
-  <body>
-    <h1>My polymer playground</h1>
-    <div class="row">
-    	<div class="col-md-6">
-    		<div class="row">
-    			<div class="col-md-12">
-    				<h3>Hello world code</h3>
-    			</div>
-    		</div>
-    		<div class="row">
-    			<div class="col-md-12">
-    				<div class="well well-lg"><pre><code><%= helloWorld %></code></pre></div>
-    			</div>
-    		</div>
-    	</div>
-    	<div class="col-md-6">
-    		<div class="row">
-    			<div class="col-md-12">
-    				<h3>Result Hello world</h3>
-    			</div>
-    			<div class="col-md-12">
-    				<hello-world name="Adrian"></hello-world>
-    			</div>
-    		</div>
-    	</div>
-    </div>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3>Life cycle example code</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="well well-lg"><pre><code><%= lifeCycle %></code></pre></div>
-                </div>
+    <link rel="import" href="webcomponents/DataBindingChildToParentParent.html"/>
+    <link rel="import" href="webcomponents/Observer.html"/>
+    <link rel="import" href="webcomponents/eventListeners.html"/>
+    <link rel="import" href="webcomponents/checkIncrease.html"/>
+    <link rel="import" href="webcomponents/listComponent.html"/>
+    <link rel="import" href="webcomponents/custom-tabs.html" />
+</head>
+<body>
+<h1>My polymer playground</h1>
+<div class="row">
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Hello world code</h3>
             </div>
         </div>
-        <div class="col-md-6">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3>Result of lify cycle example</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <life-cycle></life-cycle>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well well-lg">
+                    <pre><code><%= helloWorld %></code></pre>
                 </div>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3>CSS in polimer code</h3>
-                </div>
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Result Hello world</h3>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <h4>Bussines card code</h4>
-                    <div class="well well-lg"><pre><code><%= bussinesCard %></code></pre></div>
-                </div>
+            <div class="col-md-12">
+                <hello-world name="Adrian"></hello-world>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <h4>My card code</h4>
-                    <div class="well well-lg"><pre><code><%= myCard %></code></pre></div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Life cycle example code</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well well-lg">
+                    <pre><code><%= lifeCycle %></code></pre>
                 </div>
             </div>
         </div>
-        <div class="col-md-6">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3>CSS in polimer example</h3>
-                </div>
+    </div>
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Result of lify cycle example</h3>
             </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <h4>Card with style</h4>
-                    <bussines-card name="Adrian Ferreres" job="JS Architect" email="ardiadrianadri@gmail.com" website="https://github.com/ardiadrianadri"></bussines-card>
-                </div>
-                <div class="col-md-6">
-                    <h4>Card without style</h4>
-                    <div class="container">
-                        <p class="line1">Add Your Name</p>
-                        <p class="line2">Enter your job title</p> 
-                        <div class="contact">
-                            yourname@example.com<br/>
-                            www.example.com<br/>
-                            ###-###-####
-                        </div>
-                        <div class="logo"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <life-cycle></life-cycle>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>CSS in polimer code</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <custom-tabs tabsconfig='[{"tabname":"Business card","url":"webcomponents/bussinesCard.html"},{"tabname":"My card","url":"webcomponents/myCard.html"}]'></custom-tabs>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>CSS in polimer example</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Card with style</h4>
+                <bussines-card name="Adrian Ferreres" job="JS Architect" email="ardiadrianadri@gmail.com"
+                               website="https://github.com/ardiadrianadri"></bussines-card>
+            </div>
+            <div class="col-md-6">
+                <h4>Card without style</h4>
+                <div class="container">
+                    <p class="line1">Add Your Name</p>
+                    <p class="line2">Enter your job title</p>
+                    <div class="contact">
+                        yourname@example.com<br/>
+                        www.example.com<br/>
+                        ###-###-####
                     </div>
+                    <div class="logo"></div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <h4>My custom card</h4>
-                    <my-card my-name="Adrian Ferreres" my-job="JS Architect" my-email="ardiadrianadri@gmail.com" my-website="https://github.com/ardiadrianadri"></my-card>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h4>My custom card</h4>
+                <my-card my-name="Adrian Ferreres" my-job="JS Architect" my-email="ardiadrianadri@gmail.com"
+                         my-website="https://github.com/ardiadrianadri"></my-card>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Extend native html tags code</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well well-lg">
+                    <pre><code><%= myButton %></code></pre>
                 </div>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3>Extend native html tags code</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="well well-lg"><pre><code><%= myButton %></code></pre></div>
-                </div>
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Extend native html tags example</h3>
             </div>
         </div>
-        <div class="col-md-6">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3>Extend native html tags example</h3>
-                </div>
+        <div class="row">
+            <div class="col-md-6">
+                <button type="button" class="btn btn-default">No extended button</button>
             </div>
-            <div class="row">
-                <div class="col-md-6">
-                    <button type="button" class="btn btn-default">No extended button</button>
-                </div>
-                <div class="col-md-6">
-                    <button type="button" class="btn btn-default" is="ext-button">Extended button</button>
+            <div class="col-md-6">
+                <button type="button" class="btn btn-default" is="ext-button">Extended button</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Basic properties code</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well well-lg">
+                    <pre><code><%= basicProps %></code></pre>
                 </div>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3>Basic properties code</h3>
-                </div>
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Basic properties example</h3>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="well well-lg"><pre><code><%= basicProps %></code></pre></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <prop-elemt name="Adrian Ferreres" email="ardiadrianadri@gmail.com"></prop-elemt>
+            </div>
+        </div>
+    </div>
+</div>
+<div clas="row">
+    <div class="col-md-12">
+        <h3>Data Binding</h3>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <h4>Data Binding Parent to Child</h4>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-12">
+                <h5>Parent code</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well well-lg">
+                    <pre><code><%= DataBindingParentToChildParent %></code></pre>
                 </div>
             </div>
         </div>
-        <div class="col-md-6">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3>Basic properties example</h3>
-                </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h5>Child code</h5>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <prop-elemt name="Adrian Ferreres" email="ardiadrianadri@gmail.com"></prop-elemt>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well well-lg">
+                    <pre><code><%= DataBindingParentToChildChild %></code></pre>
                 </div>
             </div>
         </div>
     </div>
-    <div clas="row">
-        <div class="col-md-12">
-            <h3>Data Binding</h3>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-12">
-            <h4>Data Binding Parent to Child</h4>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="row">
-                <div class="col-md-12">
-                    <h5>Parent code</h5>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="well well-lg"><pre><code><%= DataBindingParentToChildParent%></code></pre></div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <h5>Child code</h5>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="well well-lg"><pre><code><%= DataBindingParentToChildChild%></code></pre></div>
-                </div>
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-12">
+                <h5>Data Binding Parent to Child example</h5>
             </div>
         </div>
-        <div class="col-md-6">
-            <div class="row">
-                <div class="col-md-12">
-                    <h5>Data Binding Parent to Child example</h5>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                     <parent-element></parent-element>
-                </div>
+        <div class="row">
+            <div class="col-md-12">
+                <parent-element></parent-element>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-12">
-            <h4>Two ways data binding</h4>
-        </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <h4>Two ways data binding</h4>
     </div>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="row">
-                <div class="col-md-12">
-                    <h5>Parent code</h5>
-                </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-12">
+                <h5>Parent code</h5>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="well well-lg"><pre><code><%= twoWaysDataBindingParent%></code></pre></div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <h5>Child code</h5>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="well well-lg"><pre><code><%= twoWaysDataBindingChild%></code></pre></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well well-lg">
+                    <pre><code><%= twoWaysDataBindingParent %></code></pre>
                 </div>
             </div>
         </div>
-        <div class="col-md-6">
-            <div class="row">
-                <div class="col-md-12">
-                    <parent-element-two></parent-element-two>
+        <div class="row">
+            <div class="col-md-12">
+                <h5>Child code</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well well-lg">
+                    <pre><code><%= twoWaysDataBindingChild %></code></pre>
                 </div>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-12">
-            <h4>Force data binding parent to child</h4>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="row">
-                <div class="col-md-12">
-                    <h5>Parent code</h5>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="well well-lg"><pre><code><%= ForceDataBindingPtCParent%></code></pre></div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <h5>Child code</h5>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="well well-lg"><pre><code><%= ForceDataBindingPtCChild%></code></pre></div>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="row">
-                <div class="col-md-12">
-                    <parent-element-three></parent-element-three>
-                </div>
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-12">
+                <parent-element-two></parent-element-two>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-12">
-            <h4>Data binding child to parent</h4>
-        </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <h4>Force data binding parent to child</h4>
     </div>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="row">
-                <div class="col-md-12">
-                    <h5>Parent code</h5>
-                </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-12">
+                <h5>Parent code</h5>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="well well-lg"><pre><code><%= DataBindingChildToParentParent%></code></pre></div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <h5>Child code</h5>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="well well-lg"><pre><code><%= DataBindingChildToParentChild%></code></pre></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well well-lg">
+                    <pre><code><%= ForceDataBindingPtCParent %></code></pre>
                 </div>
             </div>
         </div>
-        <div class="col-md-6">
-            <div class="row">
-                <div class="col-md-12">
-                    <h5>Data binding child to parent example</h5>
-                </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h5>Child code</h5>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <parent-element-four></parent-element-four>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well well-lg">
+                    <pre><code><%= ForceDataBindingPtCChild %></code></pre>
                 </div>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3>Element observer code</h3>
-                </div>
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-12">
+                <parent-element-three></parent-element-three>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="well well-lg"><pre><code><%= observer%></code></pre></div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <h4>Data binding child to parent</h4>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-12">
+                <h5>Parent code</h5>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well well-lg">
+                    <pre><code><%= DataBindingChildToParentParent %></code></pre>
                 </div>
             </div>
         </div>
-        <div class="col-md-6">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3>Result Element observer</h3>
-                </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h5>Child code</h5>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <observer-element></observer-element>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well well-lg">
+                    <pre><code><%= DataBindingChildToParentChild %></code></pre>
                 </div>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3>Event Listeners code</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="well well-lg"><pre><code><%= eventsListeners%></code></pre></div>
-                </div>
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-12">
+                <h5>Data binding child to parent example</h5>
             </div>
         </div>
-        <div class="col-md-6">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3>Result event listeners</h3>
-                </div>
+        <div class="row">
+            <div class="col-md-12">
+                <parent-element-four></parent-element-four>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <listener-element></listener-element>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Element observer code</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well well-lg">
+                    <pre><code><%= observer %></code></pre>
                 </div>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-12">
-            <h3>Custom events</h3>
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Result Element observer</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <observer-element></observer-element>
+            </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="row">
-                <div class="col-md-12">
-                    <h4>Web component that gets the event</h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="well well-lg"><pre><code><%= CustomEvent%></code></pre></div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <h4>Web component that throws the event</h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="well well-lg"><pre><code><%= checkIncrease%></code></pre></div>
-                </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Event Listeners code</h3>
             </div>
         </div>
-        <div class="col-md-6">
-            <div class="row">
-                <div class="col-md-12">
-                    <h4>Result of custom events</h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <check-increase></check-increase>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well well-lg">
+                    <pre><code><%= eventsListeners %></code></pre>
                 </div>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3>Dom repeat code</h3>
-                </div>
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Result event listeners</h3>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="well well-lg"><pre><code><%= listComponent%></code></pre></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <listener-element></listener-element>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <h3>Custom events</h3>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Web component that gets the event</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well well-lg">
+                    <pre><code><%= CustomEvent %></code></pre>
                 </div>
             </div>
         </div>
-        <div class="col-md-6">
-            <div class="row">
-                <div class="col-md-12">
-                    <h3>Result dom repeat</h3>
-                </div>
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Web component that throws the event</h4>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <list-element></list-element>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well well-lg">
+                    <pre><code><%= checkIncrease %></code></pre>
                 </div>
             </div>
         </div>
     </div>
-  </body>
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-12">
+                <h4>Result of custom events</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <check-increase></check-increase>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Dom repeat code</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="well well-lg">
+                    <pre><code><%= listComponent %></code></pre>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Result dom repeat</h3>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <list-element></list-element>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
 </html>

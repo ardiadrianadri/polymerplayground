@@ -1,0 +1,28 @@
+<link rel="import" href="code-tag.html" />
+<link rel="import" href="../javascripts/lib/paper-tabs/paper-tabs.html" />
+
+<dom-module id="custom-tabs">
+    <template>
+        <paper-tabs selected="{{selected}}">
+            <template is="dom-repeat" items="{{tabsconfig}}">
+                <paper-tab>{{item.tabname}}</paper-tab>
+            </template>
+        </paper-tabs>
+        <iron-pages selected="{{selected}}">
+            <template is="dom-repeat" items="{{tabsconfig}}">
+                <code-tag urlsource="{{item.url}}"></code-tag>
+            </template>
+        </iron-pages>
+    </template>
+    <script>
+        Polymer({
+            is:'custom-tabs',
+            properties:{
+                tabsconfig: Object
+            },
+            ready: function (){
+                this.selected = 0;
+            }
+        });
+    </script>
+</dom-module>
