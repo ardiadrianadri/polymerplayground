@@ -3,6 +3,13 @@
 
 <dom-module id="custom-tabs">
     <template>
+        <style type="text/css">
+            :root{
+                --my-custom-color: grey;
+                --paper-tabs-selection-bar-color: var(--my-custom-color);
+                --paper-tab-ink: var(--my-custom-color);
+            }
+        </style>
         <paper-tabs selected="{{selected}}">
             <template is="dom-repeat" items="{{tabsconfig}}">
                 <paper-tab>{{item.tabname}}</paper-tab>
